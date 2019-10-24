@@ -18,7 +18,7 @@ const path5 = 'subjects';
 
 function propertyExisting (object, propertyPath) {
     let currentLevel = {...object};
-    let exists = false;
+    let exists;
     const propertyLevel = propertyPath.split('.');
 
     for (let i = 0; i < propertyLevel.length; i++) {
